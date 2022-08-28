@@ -194,3 +194,56 @@ iframe {
 .fix:hover {
     background-color: #80b7b3;
 }
+.add {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #273d46;
+    margin: 3% 0 5%;
+    text-align: center;
+}
+.description__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.description__item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.item__img {
+    width: 47%;
+}
+.item__img>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.item__text {
+    width: 47%;
+}
+.item__text>h3 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+.item__text p {
+    color: #273d46;
+    text-align: justify;
+}
+p[class^="primary"] {
+    font-size: 1rem;
+    margin-top: 5%;
+}
+span {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+a[class*="more"]:hover {
+    background-color: #444444;
+}
+.description {
+    outline: 2px solid black;
+}
