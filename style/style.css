@@ -1,190 +1,175 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    font-size: 0;
-    box-sizing: border-box;
+    margin: 0; /*убираем внешние отступы по дефолту для всех элементов*/
+    padding: 0; /*убираем внутренние отступы по дефолту для всех элементов*/
+    outline: 0; /*убираем дополнительную рамку вокруг элемента по дефолту*/
+    border: 0; /*убираем границы*/
+    font-size: 0; /*обнуляем размер шрифта*/
+    box-sizing: border-box; /*обнуляем margin, padding и border для всех элементов*/
 }
-html {
-    font-size: 16px;
+html, #contact>*, .nav__list>li>a, body, p[class^="primary"], span {
+    font-size: 1rem; /*к данным элементам применяется уникальный размер шрифта*/
 }
 body {
-    line-height: 1;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f3f3f3;
+    line-height: 1; /*задаем стандартный межстрочный интервал*/
+    font-family: 'Poppins', sans-serif; /*подключаем уникальный шрифт для всех элементов на странице*/
+    background-color: #f3f3f3; /*задаем цвет подложки*/
+    font-size: 16px; /*идентифицируем значение в 1 rem в пикселях*/
 }
 a {
-    text-decoration: none;
+    text-decoration: none; /*убираем подчеркивания для ссылок*/
 }
 ol, ul {
-	list-style: none;
+	list-style: none; /*убираем маркировку для списков*/
 }
-.header, .nav, .description__item, .item__img>img {
-    width: 100%;
-}
-.header, div[class^="numbers"]>h3, .numbers__item>p {
-    text-align: center;
+.header, .nav, .description__item, .item__img>img, iframe {
+    width: 100%; /*у данных элементов ширина 100%*/
 }
 .header, .about {
-    position: relative;
+    position: relative; /*к данным элементам применяется относительное позиционирование*/
 }
 .header__logo a, .nav, .big__image, .small__image {
-    position: absolute;
+    position: absolute; /*к данным элементам применяется абсолютное позиционирование*/
 }
 .wrapper {
-    width: 75%;
-    margin: auto;
+    width: 75%; /*ширина обвертываемого блока*/
+    margin: auto; /*выравнивание блока по центру*/
 }
 .header__logo a {
-    left: 40%;
-    padding: 1% 4%;
-    box-shadow: 4px 32px 41px -22px rgba(89,89,89,1);
-    z-index: 100;
+    left: 40%; /*позиционирование элемента по левому краю*/
+    padding: 1% 4%; /*задаем внутренние отступы элемента*/
+    box-shadow: 4px 32px 41px -22px rgba(89,89,89,1); /*добавление тени к блоку*/
+    z-index: 100; /*устанавливаем значение для отображения элемента на переднем/заднем слое*/
 }
 .header__logo a, .about__content h2, div[class^="numbers"]>h3, .add {
-    font-size: 4rem;
+    font-size: 4rem; /*к данным элементам применяется единый размер шрифта*/
 }
-.header__logo a, .fix, .footer {
-    background-color: #444444;
+.header__logo a, .fix, .footer, a[class*="more"]:hover {
+    background-color: #444444; /*к данным элементам применяется единый цвет фона*/
 }
 h1 {
-    font-size: 11rem;
-    color: #e6e8e9;
-    padding-top: 6%;
-    letter-spacing: 2rem;
+    font-size: 11rem; /*задаем размер шрифта для элемента*/
+    color: #e6e8e9; /*задаем цвет для элемента*/
+    padding-top: 6%; /*задаем внутренний отступ элемента по верхнему краю*/
+    letter-spacing: 2rem; /*задаем межбуквенный интервал для элемента*/
 }
 h1, .nav__list>li>a, .about__content a, .about__content h2, .add {
-    text-transform: uppercase;
+    text-transform: uppercase; /*к данным элементам применяется эффект заглавных букв*/
 }
-#contact>a:hover, .nav__list>li>a:hover {
-    color: #80b7b3;
+#contact>a:hover, .nav__list>li>a:hover, div[class^="numbers"]>h3 {
+    color: #80b7b3; /*к данным элементам применяется уникальный цвет*/
 }
 .add {
-    letter-spacing: 0;
+    letter-spacing: 0; /*задаем межбуквенный интервал для элемента*/
 }
 .nav {
-    top: 8%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.733);
-    padding: 1% 0;
-    z-index: 90;
+    top: 8%; /*позиционирование элемента по верхнему краю*/
+    left: 0; /*позиционирование элемента по левому краю*/
+    background-color: rgba(0, 0, 0, 0.733); /*задаем цвет фона с прозрачностью*/
+    padding: 1% 0; /*задаем внутренние отступы элемента*/
+    z-index: 90; /*устанавливаем значение для отображения элемента на переднем/заднем слое*/
 }
 .nav__menu {
-    width: 40%;
-    padding: 0 5%;
-}
-.nav__list {
-    font-size: 0;
+    width: 40%; /*задаем ширину для элемента*/
+    padding: 0 5%; /*задаем внутренние отступы элемента*/
 }
 .nav__list, .numbers {
-    justify-content: space-around;
+    justify-content: space-around; /*задаем данным элементам выравнивание с одинаковыми отступами между блоками*/
 }
 .nav__list>li>a, .about__content h2, div[class^="numbers"]>h3, .add, span, h1 {
-    font-weight: 700;
+    font-weight: 700; /*задаем данным элементам жирность шрифта*/
 }
 .fix {
-    position: fixed;
-    bottom: 20%;
-    width: 8%;
-    padding: 0.5% 2%;
+    position: fixed; /*задаем элементу фиксированное позиционирование*/
+    bottom: 25%; /*позиционирование элемента по нижнему краю*/
+    width: 8%; /*задаем ширину элемента*/
+    padding: 0.5% 2%; /*задаем внутренние отступы элемента*/
 }
 .fix:hover, .about__content a {
-    background-color: #80b7b3;
+    background-color: #80b7b3; /*задаем фон для элемента при наведение*/
 }
 .fix>a, .header__logo a, .about__content a {
-    align-items: center;
-    justify-content: center;
+    align-items: center; /*задаем для всех элементов вертикальное выравнивание по центру*/
+    justify-content: center; /*задаем для всех элементов горизонтальное выравнивание по центру*/
 }
 .fix>a, .about__content a, p {
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.5rem; /*к данным элементам применяется уникальный размер шрифта*/
+    line-height: 1.2; /*к данным элементам применяется межстрочный интервал*/
 }
 .about {
-    padding: 5% 0;
+    padding: 5% 0; /*задаем внутренние отступы элемента*/
 }
-.fix>a, .about__item, .about__content a, .header__logo a {
-    display: flex;
+.fix>a, .about__item, .about__content a, .header__logo a, .nav, #contact, .nav__list, .numbers, .description__item {
+    display: flex; /*к данным элементам применяется значение flex*/
 }
 .about__content {
-    width: 50%;
+    width: 50%; /*задаем ширину элемента*/
 }
 .big__image, .fix {
-    right: 0;
+    right: 0; /*к данным элементам применяется позиционирование по правому краю со значением 0*/
 }
 .small__image {
-    width: 20%;
-    top: 12%;
-    right: 5%;
+    width: 20%; /*задаем ширину элемента*/
+    top: 12%; /*применяем позиционирование по верхнему краю*/
+    right: 5%; /*применяем позиционирование по правому краю*/
 }
 .big__image, .small__image {
-    border: 7px solid #fff;
+    border: 7px solid #fff; /*к данным элементам применяется обводка*/
 }
 .about__content a {
-    width: 60%;
-    padding: 3% 0;
+    width: 60%; /*задаем ширину элемента*/
 }
 .item__img>img, .about__content a {
-    border-radius: 50px;
+    border-radius: 50px; /*к данным элементам применяется радиус скругления углов*/
 }
 .about__content h2, .add {
-    color: #273d46;
-    margin: 3% 0 5%;
-    text-align: start;
+    margin: 3% 0 5%; /*задаем внешние отступы элементам*/
+    text-align: start; /*к данным элементам применяем выравнивание текста по правому краю*/
+}
+.header, div[class^="numbers"]>h3, .numbers__item>p, .add {
+    text-align: center; /*к данным элементам применяется выравнивание по центру*/
 }
 .about__content p, .item__text p {
-    color: #273d46;
-    text-align: justify;
+    text-align: justify; /*к данным элементам применяем выравнивание текста по левому и правому краю*/
+}
+.about__content p, .item__text p, .about__content h2, .add {
+    color: #273d46; /*к данным элементам применяется уникальный цвет*/
 }
 .numbers, .about__content a, iframe {
-    margin-top: 10%;
-}
-div[class^="numbers"]>h3 {
-    color: #80b7b3;
+    margin-top: 10%; /*задаем внешние отступы элементам по верхнему краю*/
 }
 .item__img>img {
-    object-fit: cover;
+    object-fit: cover; /*подстраиваем пропорционально ширину и высоту изображения под размеры блока*/
 }
 .footer {
-    margin-top: 2%;
-    padding: 3% 0;
+    margin-top: 2%; /*задаем внешние отступы элементам по верхнему краю*/
+}
+.footer, .about__content a {
+    padding: 3% 0; /*задаем внутренние отступы элемента*/
 }
 .nav, #contact, .nav__list, .numbers, .description__item {
-    display: flex;
-    flex-direction: row;
-}
-#contact>*, .nav__list>li>a, body {
-    font-size: 1rem;
+    flex-direction: row; /*к данным элементам применяем выравнивание в строку*/
 }
 #contact>*, .about__content a, .fix>a, .nav__list>li>a, .header__logo a {
-    color: #fff;
+    color: #fff; /*к данным элементам применяется уникальный цвет*/
 }
 #contact, .nav, .description__item {
-    justify-content: space-between;
+    justify-content: space-between; /*задаем данным элементам выравнивание по ширине родительского элемента*/
 }
 .description__item:nth-child(2n) {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /*задаем каждому второму элементу из списка реверсивное выравнивание в строку*/
 }
 .item__img, .item__text, .big__image {
-    width: 47%;
-}
-.add {
-    text-align: center;
+    width: 47%; /*задаем уникальную ширину элементам*/
 }
 .item__text>h3 {
-    font-size: 2rem;
+    font-size: 2rem; /*к данным элементам применяется уникальный размер шрифта*/
 }
 .item__text>h3, .description__item {
-    margin-bottom: 5%;
+    margin-bottom: 5%; /*задаем внешние отступы элементам по нижнему краю*/
 }
 p[class^="primary"], span {
-    font-size: 1rem;
-    margin-top: 5%;
-}
-a[class*="more"]:hover {
-    background-color: #444444;
+    margin-top: 5%; /*задаем внешние отступы элементам по верхнему краю*/
 }
 iframe {
-    width: 100%;
-    height: 60vh;
+    height: 82vh;
 }
