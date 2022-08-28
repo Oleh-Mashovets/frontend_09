@@ -20,3 +20,65 @@ a {
 ol, ul {
 	list-style: none;
 }
+.header {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    outline: 2px solid black;
+}
+.wrapper {
+    width: 75%;
+    margin: auto;
+}
+.header__logo a {
+    position: absolute;
+    left: 40%;
+    padding: 1% 4%;
+    box-shadow: 4px 32px 41px -22px rgba(89,89,89,1);
+    z-index: 100;
+    font-size: 4rem;
+    background-color: #444444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 11rem;
+    color: #e6e8e9;
+    padding-top: 6%;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.733);
+    padding: 1% 0;
+    z-index: 90;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav__menu {
+    width: 40%;
+    padding: 0 5%;
+}
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0;
+}
+.nav__list>li>a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+.nav__list>li>a:hover {
+    color: #80b7b3;
+}
