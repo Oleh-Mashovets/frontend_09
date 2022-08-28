@@ -175,3 +175,22 @@ iframe {
 #contact>a:hover {
     color: #80b7b3;
 }
+.fix {
+    position: fixed;
+    bottom: 20%;
+    right: 0;
+    width: 8%;
+    padding: 0.5% 2%;
+    background-color: #444444;
+}
+.fix>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #fff;
+}
+.fix:hover {
+    background-color: #80b7b3;
+}
