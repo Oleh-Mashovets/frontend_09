@@ -82,3 +82,59 @@ h1 {
 .nav__list>li>a:hover {
     color: #80b7b3;
 }
+.about {
+    position: relative;
+    padding: 5% 0;
+}
+.about__item {
+    display: flex;
+}
+.about__content {
+    width: 50%;
+}
+.about__content h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #273d46;
+    margin: 3% 0 5%;
+    text-align: start;
+}
+.about__content a {
+    text-transform: uppercase;
+    background-color: #80b7b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    width: 60%;
+    padding: 3% 0;
+    border-radius: 50px;
+    margin-top: 10%;
+    color: #fff;
+}
+.about__content p {
+    color: #273d46;
+    text-align: justify;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.big__image {
+    position: absolute;
+    right: 0;
+    width: 47%;
+    border: 7px solid #fff;
+}
+.small__image {
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    right: 5%;
+    border: 7px solid #fff;
+}
+.about {
+    outline: 2px solid black;
+}
